@@ -1,0 +1,341 @@
+<div class="container" style="margin-top: 100px;">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Farmer profile
+              </a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+            <div class="form-group">
+                <label for="">Full name</label>
+                <input [(ngModel)]="name" (input)="onInputChange()" type="text" class="form-control fp" required>
+            </div>
+            <div class="form-group">
+                <label for="">Email address</label>
+                <input type="email" class="form-control fp">
+            </div>
+            <div class="form-group">
+                <label for="">Cellphone number</label>
+                <input type="cel" class="form-control fp" required>
+            </div>
+            <div class="form-group">
+                <label for="">Home address</label>
+                <textarea class="form-control fp" id="" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="">Gender</label>
+                <select class="form-control fp" name="" id="" required>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">Other</option>
+                </select>
+                <!--<select [(ngModel)]="selectedGender" name="" id="">
+                    <option *ngFor="let fruit of fruits" [value]="fruit">{{fruit}}</option>
+                </select>-->
+            </div>
+            <div class="form-group">
+              <label for="">Date of birth</label>
+              <input type="date" class="form-control fp" name="" id="" required>
+            </div>
+            <div class="form-group">
+              <label for="">For how many years has your farm been operating?</label>
+              <input type="text" class="form-control fp" name="" id="" required>
+            </div>
+            <div class="form-group">
+              <label for="">What is the level of education of the farmer?</label>
+              <select class="form-group" name="" class="form-control fp" id="">
+                <option value="">Higher Certificate</option>
+                <option value="">Diploma</option>
+                <option value="">Bachelor’s Degree</option>
+                <option value="">Honours Degree</option>
+                <option value="">Master’s Degree</option>
+                <option value="">Doctorate</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Do you live on the farm</label>
+              <select class="form-control fp" name="" id="">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Have you recently attained a new skill?</label>
+              <select class="form-control fp" name="" id="">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+            <div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                Profile of the farm
+              </a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="form-group">
+                <label for="">Farm Name</label>
+                <input type="text" class="form-control" name="" id="">
+              </div>
+              <div class="form-group">
+                <label for="">Farm address</label>
+                <textarea class="form-control" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group"> 
+              <label for="">Farm type</label>
+              <select name="" class="form-control" id="">
+                <option value="">Dairy farm</option>
+                <option value="">Poultry farm</option>
+                <option value="">Flower farm</option>
+                <option value="">Hay farm</option>
+                <option value="">Coopererative farm</option>
+                <option value="">Organic farm</option>
+                <option value="">Commercial farm</option>
+                <option value="">Subsitence farm</option>
+                <option value="">Arable farm</option>
+                <option value="">Fish farm</option>
+                <option value="">Vegetable farm</option>
+                <option value="">Livestock farm</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">How many hectares is your farm?</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">How many hectares are still available?</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">On a scale of 1-10, how secure is your water supply?</label>
+              <select class="form-control" name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">State of water storage infrastructure</label>
+              <select class="form-control" name="" id="">
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Bad<option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">State of water extraction infrastructure</label>
+              <select name="" class="form-control" id="">
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Bad</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">19.	State of water dispensing infrastructure</label>
+              <select name="" class="form-control" id="">
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Bad</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">List the 3 yields you have produced in the last 3 years</label>
+              <input style="margin-bottom: 10px;" placeholder="1st yield" type="text" class="form-control" name="" id="">
+              <input style="margin-bottom: 10px;" placeholder="2nd yield" type="text" class="form-control" name="" id="">
+              <input style="margin-bottom: 10px;" placeholder="3rd yield" type="text" class="form-control" name="" id="">
+            </div>
+            <div class="form-group">
+              <label for="">State of access to your farm</label>
+              <select class="form-control" name="" id="">
+                <option value="">Select type of access</option>
+                <option value="">Gravel</option>
+                <option value="">Semi-gravel</option>
+                <option value="">Tar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">How is the network coverage in your area?</label>
+              <select class="form-control" name="" id="">
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Bad</option>
+              </select>
+            </div>
+           
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    Quality of the farming methods
+                </a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+             <div class="form-group">
+              <label for="">Quality of farming methods</label>
+              <select class="form-control" name="" id="">
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Bad</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">Do you use certified seeds?</label>
+              <select class="form-control" name="" id="">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">Do you use agro-chemicals?</label>
+              <select class="form-control" name="" id="">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">Do you use agro-machinery?</label>
+              <select class="form-control" name="" id="">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">Quality of weed management</label>
+              <select class="form-control" name="" id="">
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Bad</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">Quality of crop disease management</label>
+              <select class="form-control" name="" id="">
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Bad</option>
+              </select>
+             </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                    Access to Premium Suppliers/Services
+                </a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+             <div class="form-group">
+              <label for="">State of general hygiene</label>
+              <select class="form-control" name="" id="">
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Bad</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">Rate the accessibility that you have to premium ago suppliers</label>
+              <select class="form-control" name="" id="">
+                <option value="">Easy</option>
+                <option value="">Intermediate</option>
+                <option value="">Difficult</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">Rate the accessibility that you have to agro technical support services</label>
+              <select class="form-control" name="" id="">
+                <option value="">Easy</option>
+                <option value="">Intermediate</option>
+                <option value="">Difficult</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">Rate the accessibility that you have to logistics providers</label>
+              <select class="form-control" name="" id="">
+                <option value="">Easy</option>
+                <option value="">Intermediate</option>
+                <option value="">Difficult</option>
+              </select>
+             </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                    Level of compliance 
+                </a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="form-group">
+                  <label for="">Rate your record keeping</label>
+                  <select class="form-control" name="" id="">
+                    <option value="">Good</option>
+                    <option value="">Average</option>
+                    <option value="">Bad</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">Do you possess water license</label>
+                  <select class="form-control" name="" id="">
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">Do you possess a land use permit?</label>
+                  <select class="form-control" name="" id="">
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+              <button (click)="OnRegister()" class="btn btn-lg btn-success">Register</button>
+              <button (click)="login()" class="btn btn-lg btn-primary" style="margin: 20px;">Login</button>
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+          </div>
+          
+    </div>
+      
+</div>
