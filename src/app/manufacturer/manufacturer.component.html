@@ -1,1 +1,331 @@
-<p>manufacturer works!</p>
+<div class="container" style="margin-top: 100px;">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Manufacturer profile
+              </a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+            <div class="form-group">
+                <label for="">Full name of individu</label>
+                <input type="text" class="form-control fp" required>
+            </div>
+            <div class="form-group">
+                <label for="">Email address</label>
+                <input type="email" class="form-control fp">
+            </div>
+            <div class="form-group">
+                <label for="">Cellphone number</label>
+                <input type="cel" class="form-control fp" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="">Gender</label>
+                <select class="form-control fp" name="" id="" required>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">Other</option>
+                </select>
+                <!--<select [(ngModel)]="selectedGender" name="" id="">
+                    <option *ngFor="let fruit of fruits" [value]="fruit">{{fruit}}</option>
+                </select>-->
+            </div>
+            <div class="form-group">
+              <label for="">Date of birth</label>
+              <input type="date" class="form-control fp" name="" id="" required>
+            </div>
+            <div class="form-group">
+              <label for="">For how many years has your farm been operating?</label>
+              <input type="text" class="form-control fp" name="" id="" required>
+            </div>
+            <div class="form-group">
+              <label for="">What is the level of education of the farmer?</label>
+              <select class="form-group" name="" class="form-control fp" id="">
+                <option value=""></option>
+                <option value="">Higher Certificate</option>
+                <option value="">Diploma</option>
+                <option value="">Bachelor’s Degree</option>
+                <option value="">Honours Degree</option>
+                <option value="">Master’s Degree</option>
+                <option value="">Doctorate</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Do you live on the farm</label>
+              <select class="form-control fp" name="" id="">
+                <option value=""></option>
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Have you recently attained a new skill?</label>
+              <select class="form-control fp" name="" id="">
+                <option value=""></option>
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+            <div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                Product development information
+              </a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="form-group">
+                <label for="">Do you have your product design and specification finalised?</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+              <div class="form-group">
+                <label for="">Do you have a defined product formula? </label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+              <div class="form-group">
+                <label for="">Is the product formula documented?  </label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+              <div class="form-group">
+                <label for="">Is the product tested or accredited by all relevant third parties?</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+              <div class="form-group">
+                <label for="">Is the product ready for market/production?</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+           
+           
+           
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    Current capacity
+                </a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+             <div class="form-group">
+              <label for="">Where are you currently manufacturing your product?</label>
+              <select class="form-control" name="" id="">
+                <option value=""></option>
+                <option value="">No production yet</option>
+                <option value="">Home</option>
+                <option value="">Rented industrial site</option>
+                <option value="">Own manufacturing factory</option>
+              </select>
+             </div>
+             <div class="form-group">
+                <label for="">What is your company's production output per day?</label>
+                <select class="form-control" name="" id="">
+                  <option value=""></option>
+                  <option value="">Less than 30</option>
+                  <option value="">30 – 100</option>
+                  <option value="">100 – 800</option>
+                  <option value="">More than 800</option>
+                </select>
+               </div>
+               <div class="form-group">
+                <label for="">Do you have specified weekly production output targets?</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+              <div class="form-group">
+                <label for="">Do you meet your production targets?</label>
+                <select class="form-control" name="" id="">
+                  <option value=""></option>
+                  <option value="">Seldom </option>
+                  <option value="">Often</option>
+                  <option value="">Always</option>
+                 
+                </select>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                   Technical gaps
+                </a>
+              </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+             <div class="form-group">
+              <label for="">How much of your current production machinery do you have compared to what you need?</label>
+              <select class="form-control" name="" id="">
+                <option value=""></option>
+                <option value="">Less than 10%</option>
+                <option value="">10% - 60%</option>
+                <option value="">More than 60%</option>
+              </select>
+             </div>
+             <div class="form-group">
+              <label for="">How do you operate your best process?</label>
+              <select class="form-control" name="" id="">
+                <option value=""></option>
+                <option value="">Manually</option>
+                <option value="">Processing tools</option>
+                <option value="">Hand operated machinery</option>
+                <option value="">Automated machinery</option>
+              </select>
+             </div>
+             <div class="form-group">
+                <label for="">Have you incorporated automation in your production?</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+              <div class="form-group">
+                <label for="">Is the production line efficiency monitored and measured? </label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+             <div class="form-group">
+              <label for="">Does the company have enough resources to meet the demand?</label>
+              <select class="form-control" name="" id="">
+                <option value=""></option>
+                <option value="">Yes, we have appropriately trained staff</option>
+                <option value="">Yes, we have access to raw materials</option>
+                <option value="">We often struggle with resources</option>
+                <option value="">No, we don't have enough resources</option>
+              </select>
+             </div>
+             <div class="form-group">
+                <label for="">Do you manage production line maintenance and repair activities well? </label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+              <div class="form-group">
+                <label for="">Do you have a digital system to manage and track the overall manufacturing performance?</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                    Feasibility of existing/ proposed market reach
+                </a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="form-group">
+                  <label for="">What type of market do you currently have?</label>
+                  <select class="form-control" name="" id="">
+                    <option value=""></option>
+                    <option value="">Informal market</option>
+                    <option value="">Formal market on demand</option>
+                    <option value="">Formal market with contracts</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">What are the potential barriers to entry into new markets?</label>
+                  <select class="form-control" name="" id="">
+                    <option value=""></option>
+                    <option value="">Regulatory requirements ( Facility, H&S, accreditation, etc.)</option>
+                    <option value="">Lack of capacity to supply market </option>
+                    <option value="">Limited demand from the market</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">What is the current size of your market(units sold per week)</label>
+                  <select class="form-control" name="" id="">
+                    <option value=""></option>
+                    <option value="">Less than 1000</option>
+                    <option value="">1000 – 5000</option>
+                    <option value="">More than 5000</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="">What is your primary distribution channel used to reach customers?</label>
+                    <select class="form-control" name="" id="">
+                      <option value=""></option>
+                      <option value="">Direct sales</option>
+                      <option value="">Retail stores</option>
+                      <option value="">E-commerce</option>
+                      <option value="">Wholesale distributors</option>
+                    </select>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                    Production compliance protocols
+                </a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="form-group">
+                    <label for="">Do you have the health and safety certification for the manufacturing facility? </label>
+                    <br>
+                    <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Have you met all regulatory or compliance requirements addressed by technical changes? </label>
+                    <br>
+                    <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+              <button (click)="OnRegister()" class="btn btn-lg btn-success">Register</button>
+              <button (click)="login()" class="btn btn-lg btn-primary" style="margin: 20px;">Login</button>
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+          </div>
+          
+    </div>
+      
+</div>

@@ -12,7 +12,7 @@
             <div class="panel-body">
             <div class="form-group">
                 <label for="">Full name</label>
-                <input [(ngModel)]="name" (input)="onInputChange()" type="text" class="form-control fp" required>
+                <input (input)="onInputChange()" type="text" class="form-control fp" required>
             </div>
             <div class="form-group">
                 <label for="">Email address</label>
@@ -22,10 +22,7 @@
                 <label for="">Cellphone number</label>
                 <input type="cel" class="form-control fp" required>
             </div>
-            <div class="form-group">
-                <label for="">Home address</label>
-                <textarea class="form-control fp" id="" cols="30" rows="10" required></textarea>
-            </div>
+            
             <div class="form-group">
                 <label for="">Gender</label>
                 <select class="form-control fp" name="" id="" required>
@@ -48,6 +45,7 @@
             <div class="form-group">
               <label for="">What is the level of education of the farmer?</label>
               <select class="form-group" name="" class="form-control fp" id="">
+                <option value=""></option>
                 <option value="">Higher Certificate</option>
                 <option value="">Diploma</option>
                 <option value="">Bachelor’s Degree</option>
@@ -59,6 +57,7 @@
             <div class="form-group">
               <label for="">Do you live on the farm</label>
               <select class="form-control fp" name="" id="">
+                <option value=""></option>
                 <option value="">Yes</option>
                 <option value="">No</option>
               </select>
@@ -66,6 +65,7 @@
             <div class="form-group">
               <label for="">Have you recently attained a new skill?</label>
               <select class="form-control fp" name="" id="">
+                <option value=""></option>
                 <option value="">Yes</option>
                 <option value="">No</option>
               </select>
@@ -97,6 +97,7 @@
             <div class="form-group"> 
               <label for="">Farm type</label>
               <select name="" class="form-control" id="">
+                <option value=""></option>
                 <option value="">Dairy farm</option>
                 <option value="">Poultry farm</option>
                 <option value="">Flower farm</option>
@@ -122,6 +123,7 @@
             <div class="form-group">
               <label for="">On a scale of 1-10, how secure is your water supply?</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">1</option>
                 <option value="">2</option>
                 <option value="">3</option>
@@ -137,6 +139,7 @@
             <div class="form-group">
               <label for="">State of water storage infrastructure</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Good</option>
                 <option value="">Average</option>
                 <option value="">Bad<option>
@@ -145,6 +148,7 @@
             <div class="form-group">
               <label for="">State of water extraction infrastructure</label>
               <select name="" class="form-control" id="">
+                <option value=""></option>
                 <option value="">Good</option>
                 <option value="">Average</option>
                 <option value="">Bad</option>
@@ -153,6 +157,7 @@
             <div class="form-group">
               <label for="">19.	State of water dispensing infrastructure</label>
               <select name="" class="form-control" id="">
+                <option value=""></option>
                 <option value="">Good</option>
                 <option value="">Average</option>
                 <option value="">Bad</option>
@@ -167,7 +172,7 @@
             <div class="form-group">
               <label for="">State of access to your farm</label>
               <select class="form-control" name="" id="">
-                <option value="">Select type of access</option>
+                <option value=""></option>
                 <option value="">Gravel</option>
                 <option value="">Semi-gravel</option>
                 <option value="">Tar</option>
@@ -176,6 +181,7 @@
             <div class="form-group">
               <label for="">How is the network coverage in your area?</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Good</option>
                 <option value="">Average</option>
                 <option value="">Bad</option>
@@ -198,6 +204,7 @@
              <div class="form-group">
               <label for="">Quality of farming methods</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Good</option>
                 <option value="">Average</option>
                 <option value="">Bad</option>
@@ -206,6 +213,7 @@
              <div class="form-group">
               <label for="">Do you use certified seeds?</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Yes</option>
                 <option value="">No</option>
               </select>
@@ -213,6 +221,7 @@
              <div class="form-group">
               <label for="">Do you use agro-chemicals?</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Yes</option>
                 <option value="">No</option>
               </select>
@@ -220,6 +229,7 @@
              <div class="form-group">
               <label for="">Do you use agro-machinery?</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Yes</option>
                 <option value="">No</option>
               </select>
@@ -227,6 +237,7 @@
              <div class="form-group">
               <label for="">Quality of weed management</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Good</option>
                 <option value="">Average</option>
                 <option value="">Bad</option>
@@ -235,6 +246,7 @@
              <div class="form-group">
               <label for="">Quality of crop disease management</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Good</option>
                 <option value="">Average</option>
                 <option value="">Bad</option>
@@ -256,6 +268,7 @@
              <div class="form-group">
               <label for="">State of general hygiene</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Good</option>
                 <option value="">Average</option>
                 <option value="">Bad</option>
@@ -264,6 +277,7 @@
              <div class="form-group">
               <label for="">Rate the accessibility that you have to premium ago suppliers</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Easy</option>
                 <option value="">Intermediate</option>
                 <option value="">Difficult</option>
@@ -272,6 +286,7 @@
              <div class="form-group">
               <label for="">Rate the accessibility that you have to agro technical support services</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Easy</option>
                 <option value="">Intermediate</option>
                 <option value="">Difficult</option>
@@ -280,6 +295,7 @@
              <div class="form-group">
               <label for="">Rate the accessibility that you have to logistics providers</label>
               <select class="form-control" name="" id="">
+                <option value=""></option>
                 <option value="">Easy</option>
                 <option value="">Intermediate</option>
                 <option value="">Difficult</option>
@@ -301,6 +317,7 @@
                 <div class="form-group">
                   <label for="">Rate your record keeping</label>
                   <select class="form-control" name="" id="">
+                    <option value=""></option>
                     <option value="">Good</option>
                     <option value="">Average</option>
                     <option value="">Bad</option>
@@ -309,6 +326,7 @@
                 <div class="form-group">
                   <label for="">Do you possess water license</label>
                   <select class="form-control" name="" id="">
+                    <option value=""></option>
                     <option value="">Yes</option>
                     <option value="">No</option>
                   </select>
@@ -316,6 +334,7 @@
                 <div class="form-group">
                   <label for="">Do you possess a land use permit?</label>
                   <select class="form-control" name="" id="">
+                    <option value=""></option>
                     <option value="">Yes</option>
                     <option value="">No</option>
                   </select>
