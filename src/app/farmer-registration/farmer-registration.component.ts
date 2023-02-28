@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule } from '@angular/forms';
+import { AuthService } from '../services/auth.service';
+import { FarmService } from '../services/farm.service';
 
 
 @Component({
@@ -10,13 +12,14 @@ import { FormsModule } from '@angular/forms';
 })
 export class FarmerRegistrationComponent {
 
-name:string='';
-
-
-
+  name!: string;
+  farmerName!: string;
+  address!: string;
+  farmName!: string;
+  
   constructor(
     private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router, private authService: AuthService,private farmService:FarmService) { }
 
     onInputChange()
     {
@@ -31,6 +34,61 @@ name:string='';
     OnRegister()
     {
       console.log('You have successfully registered');
+      console.log(this.farmName + " " + this.farmerName + " " + this.address);
+      
+      this.addFarm()
+
+    }
+    addFarm(){
+
+      // if (accountSid && authToken && myNumber && twilioNumber) {
+      //   const client = new Twilio(accountSid, authToken);
+      
+      //   client.messages
+      //     .create({
+      //       from: twilioNumber,
+      //       to: myNumber,
+      //       body: "You just sent an SMS from TypeScript using Twilio!",
+      //     })
+      //     .then((message) => console.log(message.sid));
+      // } else {
+      //   console.error(
+      //     "You are missing one of the variables you need to send a message"
+      //   );
+      // }
+  
+      console.log("asdfsdf")
+      var farm = {
+        businessType: "private",
+        description: "Nandoni farms produces tomatos and potatoes",
+        farm_infrastructure: {
+          irrigationInfrastructure: "yes",
+          levelOfMachinery: ['Harvestor', 'Plower'],
+          mineralProcesses: ['Fertilizer'],
+          waterAccess: "yes",
+          waterSource: "Borehole",
+          waterSourceCapacity: "6000",
+          waterSourceSustainability: "10 years"
+        },
+        location: this.address,
+        name: this.farmName,
+        admin: this.farmerName,
+        profile_picture: "https://firebasestorage.googleapis.com/v0/b/se-holdings-farming.appspot.com/o/farms_profiles%2Fcard-3.jpg?alt=media&token=8f35d928-d1e3-4cdb-9f69-68d8624011b1ring",
+        registrationNo: "261847",
+        training_developments: {
+          agriTrainingDone: ["Plant health management","Soil Management"],
+          agriTrainingRequired: ["Fertilizer Management", "Bio planting"],
+          otherTraining: ["Spray Mangement", "Eco planting"]
+        },
+        financial_acompliance: {
+          hasFinancialStatement: true,
+          hasManagementAccounts: true,
+          hasTaxClearance: true
+        },
+        regStatus: "pending",
+        score: "8"
+      }
+      this.farmService.addfarmsregRequest(farm)
     }
     login()
     {

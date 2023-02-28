@@ -11,7 +11,12 @@ import { ManufacturerComponent } from './manufacturer/manufacturer.component';
 import { FormsModule } from '@angular/forms';
 import { FarmerdashboardComponent } from './farmerdashboard/farmerdashboard.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { AuthService } from './services/auth.service';
+import { AngularFireModule } from '@angular/fire/compat';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },];
@@ -30,12 +35,19 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    AngularFireModule.initializeApp(environment.firebase),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore())
   ],
   exports: [
     RouterModule
   ],
-  providers: [],
+  providers: [
+
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
