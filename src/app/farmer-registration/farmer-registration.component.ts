@@ -22,7 +22,19 @@ export class FarmerRegistrationComponent {
   farmerName!: string;
   address!: string;
   farmName!: string;
-  
+  YesFarm!:boolean;
+  NoFarm!:boolean;
+  YesSkill!:boolean;
+  NoSkill!:boolean;
+  farmStreet!:string;
+  FarmMunicipality!:string;
+  TypeFarm!:string;
+  hectaresAvailable!:string;
+  HectaresLeft!:string;
+  WaterScale!:string;
+  WaterInfrastructureAvailable!:string;
+  WaterExtractionInfrastructure!:string;
+  WaterDispensingInfrastructure!:string;
   constructor(
     private route: ActivatedRoute,
     private router: Router, private authService: AuthService,private farmService:FarmService) { }
@@ -64,7 +76,9 @@ export class FarmerRegistrationComponent {
       // }
   
       console.log("asdfsdf")
-      var farm = {
+      var farm = 
+      {
+        farmName:this.name,
         businessType: "private",
         description: "Nandoni farms produces tomatos and potatoes",
         farm_infrastructure: {
@@ -76,13 +90,35 @@ export class FarmerRegistrationComponent {
           waterSourceCapacity: "6000",
           waterSourceSustainability: "10 years"
         },
-        email:this.email,
-        cel:this.cel,
-        gender:this.gender,
-        location: this.address,
-        dob:this.dob,
-        yo:this.yo,
-        education:this.education,
+        farmerProfile:
+        {
+          email:this.email,
+          cel:this.cel,
+          gender:this.gender,
+          location: this.address,
+          dob:this.dob,
+          yo:this.yo,
+          YesFarm:this.YesFarm,
+          NoFarm:this.NoFarm,
+          education:this.education,
+          YesSkill:this.YesSkill,
+          NoSkill:this.NoSkill,
+        },
+       FarmProfile:
+       {
+        FarmMunicipality:this.FarmMunicipality,
+        farmStreet:this.farmStreet,
+        TypeFarm:this.TypeFarm,
+        hectaresAvailable:this.hectaresAvailable,
+        HectaresLeft:this.HectaresLeft,
+        WaterScale:this.WaterScale,
+        WaterInfrastructureAvailable:this.WaterInfrastructureAvailable,
+        WaterExtractionInfrastructure:this.WaterExtractionInfrastructure,
+        WaterDispensingInfrastructure:this.WaterDispensingInfrastructure,
+        
+       },
+
+
         name: this.farmName,
         admin: this.farmerName,
         profile_picture: "https://firebasestorage.googleapis.com/v0/b/se-holdings-farming.appspot.com/o/farms_profiles%2Fcard-3.jpg?alt=media&token=8f35d928-d1e3-4cdb-9f69-68d8624011b1ring",

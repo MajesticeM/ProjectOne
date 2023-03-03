@@ -46,25 +46,25 @@
               <label for="">What is the level of education of the farmer?</label>
               <select [(ngModel)]="education" class="form-group" name="" class="form-control fp" id="">
                 <option value=""></option>
-                <option value="">Higher Certificate</option>
-                <option value="">Diploma</option>
-                <option value="">Bachelor’s Degree</option>
-                <option value="">Honours Degree</option>
-                <option value="">Master’s Degree</option>
-                <option value="">Doctorate</option>
+                <option value="HC">Higher Certificate</option>
+                <option value="D">Diploma</option>
+                <option value="BD">Bachelor’s Degree</option>
+                <option value="HD">Honours Degree</option>
+                <option value="MD">Master’s Degree</option>
+                <option value="DOC">Doctorate</option>
               </select>
             </div>
             <div class="form-group">
               <label for="">Do you live on the farm</label>
               <br>
-              <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-              <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              <label class="radio-inline"><input type="radio" [(ngModel)]="YesFarm" name="optradio">Yes</label>
+              <label class="radio-inline"><input type="radio" [(ngModel)]="NoFarm" name="optradio">No</label>
             </div>
             <div class="form-group">
               <label for="">Have you recently attained a new skill?</label>
               <br>
-              <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-              <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              <label class="radio-inline"><input type="radio" [(ngModel)]="YesSkill" name="optradio">Yes</label>
+              <label class="radio-inline"><input type="radio" [(ngModel)]="NoSkill" name="optradio">No</label>
             </div>
             <div>
 
@@ -90,12 +90,12 @@
                 <h4>Farm address</h4>
                 <br>
                 <label for="">Municipality</label>
-               <input type="text" class="form-control">
+               <input [(ngModel)]="FarmMunicipality" type="text" class="form-control">
                 
             </div>
             <div class="form-group">
               <label for="">Street</label>
-              <input type="text" class="form-control">
+              <input type="text" [(ngModel)]="farmStreet" class="form-control">
 
             </div>
             <div class="form-group">
@@ -104,95 +104,95 @@
             </div>
             <div class="form-group"> 
               <label for="">Farm type</label>
-              <select name="" class="form-control" id="">
-                <option value=""></option>
-                <option value="">Dairy farm</option>
-                <option value="">Poultry farm</option>
-                <option value="">Flower farm</option>
-                <option value="">Hay farm</option>
-                <option value="">Coopererative farm</option>
-                <option value="">Organic farm</option>
-                <option value="">Commercial farm</option>
-                <option value="">Subsitence farm</option>
-                <option value="">Arable farm</option>
-                <option value="">Fish farm</option>
-                <option value="">Vegetable farm</option>
-                <option value="">Livestock farm</option>
+              <select [(ngModel)]="TypeFarm" name="" class="form-control" id="">
+                <option value="none"></option>
+                <option value="dairy">Dairy</option>
+                <option value="poultry">Poultry</option>
+                <option value="flower">Flower </option>
+                <option value="hay">Hay</option>
+                <option value="cooperative">Coopererative </option>
+                <option value="organic">Organic</option>
+                <option value="commercial">Commercial</option>
+                <option value="subsistence">Subsitence</option>
+                <option value="arable">Arable</option>
+                <option value="fish">Fish</option>
+                <option value="vegetable">Vegetable</option>
+                <option value="livestock">Livestock </option>
               </select>
             </div>
             <div class="form-group">
               <label for="">How many hectares is your farm?</label>
-              <input type="text" class="form-control">
+              <input [(ngModel)]="hectaresAvailable" type="text" class="form-control">
             </div>
             <div class="form-group">
               <label for="">How many hectares are still available?</label>
-              <input type="text" class="form-control">
+              <input [(ngModel)]="HectaresLeft" type="text" class="form-control">
             </div>
             <div class="form-group">
               <label for="">On a scale of 1-10, how secure is your water supply?</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
+              <select [(ngModel)]="WaterScale" class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
               </select>
             </div>
             <div class="form-group">
               <label for="">State of water storage infrastructure</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Good</option>
-                <option value="">Average</option>
-                <option value="">Bad<option>
+              <select [(ngModel)]="WaterInfrastructureAvailable" class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="good">Good</option>
+                <option value="good">Average</option>
+                <option value="bad">Bad<option>
               </select>
             </div>
             <div class="form-group">
               <label for="">State of water extraction infrastructure</label>
-              <select name="" class="form-control" id="">
-                <option value=""></option>
-                <option value="">Good</option>
-                <option value="">Average</option>
-                <option value="">Bad</option>
+              <select [(ngModel)]="WaterExtractionInfrastructure" name="" class="form-control" id="">
+                <option value="none"></option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="bad">Bad</option>
               </select>
             </div>
             <div class="form-group">
               <label for="">State of water dispensing infrastructure</label>
-              <select name="" class="form-control" id="">
-                <option value=""></option>
-                <option value="">Good</option>
-                <option value="">Average</option>
-                <option value="">Bad</option>
+              <select name="" [(ngModel)]="WaterDispensingInfrastructure" class="form-control" id="">
+                <option value="none"></option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="bad">Bad</option>
               </select>
             </div>
             <div class="form-group">
               <label for="">List the top 3 crop/livestock you have produced in the last 3 years</label>
-              <input style="margin-bottom: 10px;" placeholder="" type="text" class="form-control" name="" id="">
-              <input style="margin-bottom: 10px;" placeholder="" type="text" class="form-control" name="" id="">
-              <input style="margin-bottom: 10px;" placeholder="" type="text" class="form-control" name="" id="">
+              <input [(ngModel)]="Yield01" style="margin-bottom: 10px;" placeholder="" type="text" class="form-control" name="" id="">
+              <input [(ngModel)]="Yield02"  style="margin-bottom: 10px;" placeholder="" type="text" class="form-control" name="" id="">
+              <input [(ngModel)]="Yield03"  style="margin-bottom: 10px;" placeholder="" type="text" class="form-control" name="" id="">
             </div>
             <div class="form-group">
               <label for="">State of access to your farm</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Gravel</option>
-                <option value="">Semi-gravel</option>
-                <option value="">Tar</option>
+              <select  [(ngModel)]="farmAccess"  class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="gravel">Gravel</option>
+                <option value="semigravel">Semi-gravel</option>
+                <option value="tar">Tar</option>
               </select>
             </div>
             <div class="form-group">
               <label for="">How is the network coverage in your area?</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Good</option>
-                <option value="">Average</option>
-                <option value="">Bad</option>
+              <select [(ngModel)]="NetworkCoverage"  class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="bad">Bad</option>
               </select>
             </div>
            
@@ -211,47 +211,47 @@
               <div class="panel-body">
              <div class="form-group">
               <label for="">Quality of farming methods</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Good</option>
-                <option value="">Average</option>
-                <option value="">Bad</option>
+              <select [(ngModel)]="farmingMethods"  class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Bad">Bad</option>
               </select>
              </div>
              <div class="form-group">
               <label for="">Do you use certified seeds?</label>
               <br>
-              <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-              <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              <label [(ngModel)]="CertifiedSeedYes"  class="radio-inline"><input type="radio" name="optradio">Yes</label>
+              <label [(ngModel)]="CertifiedSeedNo"   class="radio-inline"><input type="radio" name="optradio">No</label>
              </div>
              <div class="form-group">
               <label for="">Do you use agro-chemicals?</label>
               <br>
-              <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-              <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              <label [(ngModel)]="AgroChemicalsYes"   class="radio-inline"><input type="radio" name="optradio">Yes</label>
+              <label [(ngModel)]="AgroChemicalsNo" class="radio-inline"><input type="radio" name="optradio">No</label>
              </div>
              <div class="form-group">
               <label for="">Do you use agro-machinery?</label>
               <br>
-              <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-              <label class="radio-inline"><input type="radio" name="optradio">No</label>
+              <label  [(ngModel)]="AgroMachinesYes" class="radio-inline"><input type="radio" name="optradio">Yes</label>
+              <label [(ngModel)]="AgroMachinesNo" class="radio-inline"><input type="radio" name="optradio">No</label>
              </div>
              <div class="form-group">
               <label for="">Quality of weed management</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Good</option>
-                <option value="">Average</option>
-                <option value="">Bad</option>
+              <select  [(ngModel)]="WeedManagement" class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="bad">Bad</option>
               </select>
              </div>
              <div class="form-group">
               <label for="">Quality of crop disease management</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Good</option>
-                <option value="">Average</option>
-                <option value="">Bad</option>
+              <select  [(ngModel)]="diseaseManagement" class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="bad">Bad</option>
               </select>
              </div>
               </div>
@@ -269,38 +269,38 @@
               <div class="panel-body">
              <div class="form-group">
               <label for="">State of general hygiene</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Good</option>
-                <option value="">Average</option>
-                <option value="">Bad</option>
+              <select  [(ngModel)]="generalHygiene" class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="bad">Bad</option>
               </select>
              </div>
              <div class="form-group">
               <label for="">Rate the accessibility that you have to premium agro suppliers</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Easy</option>
-                <option value="">Intermediate</option>
-                <option value="">Difficult</option>
+              <select [(ngModel)]="AgroSuppliers" class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="easy">Easy</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="difficult">Difficult</option>
               </select>
              </div>
              <div class="form-group">
               <label for="">Rate the accessibility that you have to agro technical support services</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Easy</option>
-                <option value="">Intermediate</option>
-                <option value="">Difficult</option>
+              <select  [(ngModel)]="technicalSupport" class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="easy">Easy</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="difficult">Difficult</option>
               </select>
              </div>
              <div class="form-group">
               <label for="">Rate the accessibility that you have to logistics providers</label>
-              <select class="form-control" name="" id="">
-                <option value=""></option>
-                <option value="">Easy</option>
-                <option value="">Intermediate</option>
-                <option value="">Difficult</option>
+              <select  [(ngModel)]="logisticsProviders" class="form-control" name="" id="">
+                <option value="none"></option>
+                <option value="easy">Easy</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="difficult">Difficult</option>
               </select>
              </div>
               </div>
@@ -318,24 +318,24 @@
               <div class="panel-body">
                 <div class="form-group">
                   <label for="">Rate your record keeping</label>
-                  <select class="form-control" name="" id="">
-                    <option value=""></option>
-                    <option value="">Good</option>
-                    <option value="">Average</option>
-                    <option value="">Bad</option>
+                  <select [(ngModel)]="recordKeeping" class="form-control" name="" id="">
+                    <option value="none"></option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="bad">Bad</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="">Do you possess water license</label>
                   <br>
-                  <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-                  <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                  <label [(ngModel)]="waterLicenseYes" class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                  <label [(ngModel)]="waterLicenseNo" class="radio-inline"><input type="radio" name="optradio">No</label>
                 </div>
                 <div class="form-group">
                   <label for="">Do you possess a land use permit?</label>
                   <br>
-                  <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
-                  <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                  <label  [(ngModel)]="LandUsePermitYes" class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                  <label  [(ngModel)]="LandUsePermitNo" class="radio-inline"><input type="radio" name="optradio">No</label>
                 </div>
               </div>
             </div>
