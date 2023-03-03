@@ -12,20 +12,20 @@
             <div class="panel-body">
             <div class="form-group">
                 <label for="">Full name</label>
-                <input [(ngModel)]="farmerName" (input)="onInputChange()" type="text" class="form-control fp" required>
+                <input  type="text" class="form-control fp" required>
             </div>
             <div class="form-group">
                 <label for="">Email address</label>
-                <input [(ngModel)]="email" type="email" class="form-control fp">
+                <input type="email" class="form-control fp">
             </div>
             <div class="form-group">
                 <label for="">Cellphone number</label>
-                <input [(ngModel)]="cel" type="cel" class="form-control fp" required>
+                <input type="cel" class="form-control fp" required>
             </div>
             
             <div class="form-group">
                 <label for="">Gender</label>
-                <select [(ngModel)]="gender" class="form-control fp" name="" id="" required>
+                <select class="form-control fp" name="" id="" required>
                   <option value="">Male</option>
                   <option value="">Female</option>
                   <option value="">Other</option>
@@ -36,15 +36,15 @@
             </div>
             <div class="form-group">
               <label for="">Date of birth</label>
-              <input [(ngModel)]="dob" type="date" class="form-control fp" name="" id="" required>
+              <input type="date" class="form-control fp" name="" id="" required>
             </div>
             <div class="form-group">
               <label for="">For how many years has your farm been operating?</label>
-              <input [(ngModel)]="yo" type="text" class="form-control fp" name="" id="" required>
+              <input type="text" class="form-control fp" name="" id="" required>
             </div>
             <div class="form-group">
               <label for="">What is the level of education of the farmer?</label>
-              <select [(ngModel)]="education" class="form-group" name="" class="form-control fp" id="">
+              <select class="form-group" name="" class="form-control fp" id="">
                 <option value=""></option>
                 <option value="">Higher Certificate</option>
                 <option value="">Diploma</option>
@@ -84,40 +84,28 @@
             <div class="panel-body">
               <div class="form-group">
                 <label for="">Farm Name</label>
-                <input  [(ngModel)]="farmName" type="text" class="form-control" name="" id="">
+                <input type="text" class="form-control" name="" id="">
               </div>
               <div class="form-group">
-                <h4>Farm address</h4>
-                <br>
-                <label for="">Municipality</label>
-               <input type="text" class="form-control">
-                
-            </div>
-            <div class="form-group">
-              <label for="">Street</label>
-              <input type="text" class="form-control">
-
-            </div>
-            <div class="form-group">
-              <label for="">Postal Address</label>
-              <input type="text" class="form-control">
+                <label for="">Farm address</label>
+                <textarea class="form-control" id="" cols="30" rows="10"></textarea>
             </div>
             <div class="form-group"> 
               <label for="">Farm type</label>
               <select name="" class="form-control" id="">
                 <option value=""></option>
-                <option value="">Dairy farm</option>
-                <option value="">Poultry farm</option>
-                <option value="">Flower farm</option>
-                <option value="">Hay farm</option>
-                <option value="">Coopererative farm</option>
-                <option value="">Organic farm</option>
-                <option value="">Commercial farm</option>
-                <option value="">Subsitence farm</option>
-                <option value="">Arable farm</option>
-                <option value="">Fish farm</option>
-                <option value="">Vegetable farm</option>
-                <option value="">Livestock farm</option>
+                <option value="">Dairy</option>
+                <option value="">Poultry</option>
+                <option value="">Flower</option>
+                <option value="">Hay</option>
+                <option value="">Coopererative</option>
+                <option value="">Organic</option>
+                <option value="">Commercial</option>
+                <option value="">Subsitence</option>
+                <option value="">Arable</option>
+                <option value="">Fish</option>
+                <option value="">Vegetable</option>
+                <option value="">Livestock</option>
               </select>
             </div>
             <div class="form-group">
@@ -277,7 +265,7 @@
               </select>
              </div>
              <div class="form-group">
-              <label for="">Rate the accessibility that you have to premium agro suppliers</label>
+              <label for="">Rate the accessibility that you have to premium ago suppliers</label>
               <select class="form-control" name="" id="">
                 <option value=""></option>
                 <option value="">Easy</option>
@@ -345,8 +333,8 @@
 
             </div>
             <div class="col-lg-4">
-              <button (click)="OnRegister()" class="btn btn-lg btn-success">Register</button>
-              <button (click)="Login()" class="btn btn-lg btn-primary" style="margin: 20px;">Login</button>
+              <button  class="btn btn-lg btn-success">Register</button>
+              <button  class="btn btn-lg btn-primary" style="margin: 20px;">Login</button>
             </div>
             <div class="col-lg-4">
 

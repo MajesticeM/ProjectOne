@@ -13,6 +13,12 @@ import { FarmService } from '../services/farm.service';
 export class FarmerRegistrationComponent {
 
   name!: string;
+  email!:string;
+  cel!:number;
+  gender!:string;
+  dob!:string;
+  education!:string;
+  yo!:string;
   farmerName!: string;
   address!: string;
   farmName!: string;
@@ -70,7 +76,13 @@ export class FarmerRegistrationComponent {
           waterSourceCapacity: "6000",
           waterSourceSustainability: "10 years"
         },
+        email:this.email,
+        cel:this.cel,
+        gender:this.gender,
         location: this.address,
+        dob:this.dob,
+        yo:this.yo,
+        education:this.education,
         name: this.farmName,
         admin: this.farmerName,
         profile_picture: "https://firebasestorage.googleapis.com/v0/b/se-holdings-farming.appspot.com/o/farms_profiles%2Fcard-3.jpg?alt=media&token=8f35d928-d1e3-4cdb-9f69-68d8624011b1ring",

@@ -17,6 +17,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AuthService } from './services/auth.service';
 import { AngularFireModule } from '@angular/fire/compat';
+import { GBComponent } from './gb/gb.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },];
@@ -29,7 +30,8 @@ const routes: Routes = [
     GeneralComponent,
     ManufacturerComponent,
     FarmerdashboardComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    GBComponent
   ],
   imports: [
     BrowserModule,
