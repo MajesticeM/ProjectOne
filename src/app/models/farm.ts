@@ -16,7 +16,7 @@ export interface Farm {
         waterSourceCapacity: string,
         waterSourceSustainability: string
     }
-    location: string
+   
     name: string
     profile_picture: string
     registrationNo: string
