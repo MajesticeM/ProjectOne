@@ -35,6 +35,29 @@ export class FarmerRegistrationComponent {
   WaterInfrastructureAvailable!:string;
   WaterExtractionInfrastructure!:string;
   WaterDispensingInfrastructure!:string;
+  Yield01!:string;
+  Yield02!:string;
+  Yield03!:string;
+  farmAccess!:string;
+  NetworkCoverage!:string;
+  farmingMethods!:string;
+  CertifiedSeedYes!:boolean;
+  CertifiedSeedNo!:boolean;
+  AgroChemicalsYes!:boolean;
+  AgroChemicalsNo!:boolean;
+  AgroMachinesYes!:boolean;
+  AgroMachinesNo!:boolean;
+  WeedManagement!:string;
+  diseaseManagement!:string;
+  generalHygiene!:string;
+  AgroSuppliers!:string;
+  technicalSupport!:string;
+  logisticsProviders!:string;
+  recordKeeping!:string;
+  waterLicenseYes!:boolean;
+  waterLicenseNo!:boolean;
+  LandUsePermitYes!:boolean;
+  LandUsePermitNo!:boolean;
   constructor(
     private route: ActivatedRoute,
     private router: Router, private authService: AuthService,private farmService:FarmService) { }
@@ -115,10 +138,40 @@ export class FarmerRegistrationComponent {
         WaterInfrastructureAvailable:this.WaterInfrastructureAvailable,
         WaterExtractionInfrastructure:this.WaterExtractionInfrastructure,
         WaterDispensingInfrastructure:this.WaterDispensingInfrastructure,
-        
+        Yield01:this.Yield01,
+        Yeild02:this.Yield02,
+        Yeild03:this.Yield03,
+        farmAccess:this.farmAccess,
+        NetworkCoverage:this.NetworkCoverage,
+       },
+       FarmingQualityMethods:
+       {
+        farmingMethods:this.farmingMethods,
+        CertifiedSeedYes:this.CertifiedSeedYes,
+        CertifiedSeedNo:this.CertifiedSeedNo,
+        AgroChemicalsYes:this.AgroChemicalsYes,
+        AgroChemicalsNo:this.AgroChemicalsNo,
+        AgroMachinesYes:this.AgroChemicalsYes,
+        AgroMachinesNo:this.AgroChemicalsNo,
+        WeedManagement:this.WeedManagement,
+        diseaseManagement:this.diseaseManagement,
+       },
+       Access:
+       {
+        generalHygiene:this.generalHygiene,
+        AgroSuppliers:this.AgroSuppliers,
+        technicalSupport:this.technicalSupport,
+        logisticsProviders:this.logisticsProviders,
        },
 
-
+       compliance:
+       {
+        recordKeeping:this.recordKeeping,
+        waterLicenseYes:this.waterLicenseYes,
+        waterLicenseNo:this.waterLicenseNo,
+        LandUsePermitYes:this.LandUsePermitYes,
+        LandUsePermitNo:this.LandUsePermitNo,
+       },
         name: this.farmName,
         admin: this.farmerName,
         profile_picture: "https://firebasestorage.googleapis.com/v0/b/se-holdings-farming.appspot.com/o/farms_profiles%2Fcard-3.jpg?alt=media&token=8f35d928-d1e3-4cdb-9f69-68d8624011b1ring",
